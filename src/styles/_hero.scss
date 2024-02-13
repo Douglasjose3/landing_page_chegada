@@ -1,0 +1,41 @@
+@use 'variables';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url("/src/images/abre_hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$textSecundary;
+        opacity: 0.7;
+        content: '';
+    }
+
+    &__brand {
+        margin: 0 auto;
+        height: 150px;
+        display: block;
+    }
+
+    &__text {
+        margin-top: 50px;
+        margin-bottom: 64px;
+        font-weight: 900;
+        font-size: 40px;
+        text-align: center;
+        color: variables.$textPrimary;
+    }
+
+}
