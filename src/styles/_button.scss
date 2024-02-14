@@ -7,9 +7,7 @@
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
-    display: flex;
     text-align: center;
-
 
     &--primary {
         color: variables.$textPrimary;
@@ -20,15 +18,5 @@
             filter: brightness(50%);
             color: variables.$textPrimary;
         }
-    }
-
-    @media (max-width: 640px) {
-        display: block;
-        width: 100%;
-    }
-
-    @media (max-width: 1024px) {
-        display: flex;
-        align-items: center;
     }
 }

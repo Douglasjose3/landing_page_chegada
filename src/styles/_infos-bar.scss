@@ -1,7 +1,7 @@
 @use 'variables';
 
 .infos-bar {
-    padding: 15px;
+    padding: 15px 40px;
     background-color: variables.$textPrimary;
     display: flex;
     justify-content: space-between;
@@ -9,31 +9,46 @@
 
     &__infos {
         display: flex;
-        gap: 120px;
+        gap: 230px;
+        margin: 0;
+        padding: 0;
 
         &__item {
             font-size: 18px;
             color: variables.$textSecundary;
-            justify-content: space-between;
+            text-decoration: none;
 
             b {
                 font-size: 18px;
-                display: block;
                 color: variables.$textSecundary;
             }
 
             i {
                 font-size: 20px;
                 color: variables.$buttonColor;
-                margin-right: 10px;
+                margin-right: 8px;
             }
+        }
+    }
 
-            p {
-                display: flex;
-                text-align: center;
-                margin: 0 auto;
-                padding: 0;
-            }
+    @media (max-width: 640px) {
+        display: block;
+        text-align: center;
+
+        &__infos {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        a {
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+
+        li {
+            margin-bottom: 20px;
         }
     }
 }

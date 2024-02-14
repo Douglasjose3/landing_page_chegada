@@ -23,19 +23,36 @@
         content: '';
     }
 
-    &__brand {
+    &__image {
         margin: 0 auto;
-        height: 150px;
+        width: 400px;
         display: block;
+        border-radius: 50%;
     }
 
     &__text {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 64px;
         font-weight: 900;
         font-size: 40px;
         text-align: center;
         color: variables.$textPrimary;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        max-width: 100%;
+
+        &__image {
+            max-width: 200px;
+        }
+
+        &__text {
+            font-size: 30px;
+            line-height: 44px;
+            margin: 24px 0;
+            flex-wrap: nowrap;
+        }
     }
 
 }

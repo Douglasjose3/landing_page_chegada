@@ -10,46 +10,79 @@
     <link rel="stylesheet" href="styles/style.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__brand" src="/src/images/Logo Dourado.png" alt="Brand Fnfatto">
-            <p class="hero__text">Vanessa <br>vai chegar em <br>40d 10h 24m 13s </p>
-            <div class="infos-bar">
-                <ul class="infos-bar__infos">
-                    <li class="infos-bar__infos__item">
-                        <p>
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <b>Onde</b>
-                        </p>
-                        Meu apartamento
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <p>
-                            <i class="bi bi-egg-fried"></i>
-                            <b>O que trazer</b>
-                        </p>
-                        Somento o que for comer e beber
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <p>
-                            <i class="bi bi-calendar3"></i>
-                            <b>Quando</b>
-                        </p>
-                        27/03/2024
-                    </li>
-                </ul>
-                <a href="#" class="button button--primary">
-                    EU VOU
-                </a>
+            <img class="hero__image" src="/src/images/icon-viagem.png" alt="Baggage">
+            <p class="hero__text">Vanessinha confusão <br>vai chegar em <br><span id="contador"></span> </p>
+                <div class="infos-bar">
+                    <ul class="infos-bar__infos">
+                        <li>
+                            <a href="#maps" class="infos-bar__infos__item">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <b>Onde</b>
+                            </a>
+                            <br>928 adams st.
+                        </li>
+                        <li>
+                            <a href="#foods" class="infos-bar__infos__item">
+                                <i class="bi bi-egg-fried"></i>
+                                <b>Comes e bebes</b>
+                            </a>
+                            <br>Traga tudo que puder
+                            
+                        </li>
+                        <li>
+                            <a href="#dates" class="infos-bar__infos__item">
+                                <i class="bi bi-calendar3"></i>
+                                <b>Quando</b>
+                            </a>
+                            <br>27/03/2024
+                        </li>
+                    </ul>
+                    <a href="#" class="button button--primary">
+                        EU VOU
+                    </a>
+                </div>
             </div>
-            
-        </div>
     </header>
 
+    <section class="event event--map" id="maps">
+            <div class="container" data-aos="zoom-in-up">
+                <div class="event__details">
+                    <h2 class="event__details__title">Localização</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet elit. Ullam dicta ad quo architecto ipsa nihil provident eaque asperiores rem. Facilis eius, quia natus accusamus non saepe quae exercitationem?</p>
+                </div>
+                <div data-aos="flip-left">
+                    <iframe class="event__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.767168009351!2d-122.29983349999999!3d37.88912740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085792df0bc0a11%3A0xaa5273baaa262ea3!2s928%20Adams%20St%2C%20Albany%2C%20CA%2094706!5e0!3m2!1spt-BR!2sus!4v1707875101946!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+    </section>
 
+    <section class="event event--food event--image-left" id="foods">
+        <div class="container" data-aos="zoom-in-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Barbecue in backyard</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aliquid impedit quis harum quidem consectetur placeat, ipsa ea corrupti accusantium? Architecto quae, maxime cupiditate voluptates officiis recusandae iste voluptas adipisci!</p>
+            </div>
+            <img class="event__image" src="/src/images/2151000351.jpg" alt="Barbecue in backyard">
+        </div>
+    </section>
 
+    <section class="event event--date" id="dates">
+        <div class="container" data-aos="zoom-in-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Karaoke in backyard</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident omnis, nemo quis enim mollitia non porro eaque, esse earum fugiat. Soluta laudantium itaque quaerat ut quibusdam ab eius doloribus!</p>
+            </div>
+                <img class="event__image" src="/src/images/2403.jpg" alt="Karaoke">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>

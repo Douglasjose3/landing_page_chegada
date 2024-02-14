@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'infos-bar';
 @use 'button';
+@use 'event';
 
 * {
     margin: 0;
@@ -8,6 +9,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 .container {
